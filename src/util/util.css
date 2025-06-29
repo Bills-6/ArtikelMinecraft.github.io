@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'text';
+	src: url(/assets/fonts/CascadiaCode-VariableFont_wght.ttf);
+	font-weight: 100 700;
+	font-style: normal;
+}
+:root{
+	--primary: 33, 37, 41;
+	--secondary: #b5b5b5;
+	--dark-extrem: #1d1d1d;
+	--font: 'text', Arial;
+	--text-color: rgba(var(--primary));
+	--white: #fff;
+}
+*{
+	font-family: var(--font);
+}
+.w-max{width: max-content !important;}
+.h-max{height: max-content !important;}
+.color-dark{color: var(--dark-extrem);}
+.back-dark{background-color: var(--dark-extrem);}
+.color-primary{color: var(--primary);}
+.back-primary{background-color: rgba(var(--primary));}
+.color-secondary{color: var(--secondary);}
+.back-secondary{background-color: var(--secondary);}
+.font{font-family: var(--font);}
+.color-white{color: var(--white);}
+.white{background-color: var(--white);}
+/* large */
+@media only screen and (min-width: 992px){
+	.w-lg-max{width: max-content !important;}
+	.h-lg-max{height: max-content !important;}
+	.w-lg-100{width: 100% !important;}
+	.h-lg-100{height: 100% !important;}
+}

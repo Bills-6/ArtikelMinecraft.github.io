@@ -1,0 +1,136 @@
+@import url(/src/util/util.css);
+.hamburger{
+	top: 32px;
+	right: 32px;
+}
+.hamburger > .bar{
+	transition: all 0.2s linear;
+	background-color: rgba(var(--primary));
+}
+.hamburger > .bar:first-child{
+	transform-origin: left top;
+}
+.hamburger > .bar.bar:last-child{
+	transform-origin: left bottom;
+}
+/* if hamburger achived a click */
+.hamburger.active > .bar:first-child{
+	rotate: 45deg;
+}
+.hamburger.active > .bar:nth-child(2){
+	opacity: 0;
+	scale: 0;
+}
+.hamburger.active > .bar:last-child{
+	rotate: -45deg;
+	transform: translate(2px, -1.5px);
+}
+.hamburger.active > *{
+	background-color: #fff;
+}
+
+/* navbar */
+.navbar{
+	height: 100vh;
+	width: 70vw !important;
+	right: -200%;
+	transition: all 0.3s linear;
+}
+.navbar.active{
+	right: 0;
+}
+.collapse.navbar-collapse{
+	display: flex !important;
+}
+.collapse.navbar-collapse .navbar-nav *{
+	transition: all 0.5s ease;
+}
+.nav-link:hover{
+	scale: 0.9;
+}
+.dropdown-menu .dropdown-item{
+	transition: all 0.2s linear !important;
+}
+.dropdown-item:hover{
+	color: var(--white);
+	background-color: rgba(var(--primary));
+}
+
+.social-links .social-item{
+	width: 30px;
+	height: 30px;
+	transition: box-shadow 0.2s linear;
+}
+.social-item:hover{
+	box-shadow: 5px 3px 0 #888;
+}
+.social-item a i {
+	font-size: clamp(1.5rem, 5vw, 2rem);
+}
+.box{
+	box-shadow: 8px 4px 0 #888;
+}
+#input-user {
+	height: max-content;
+	border: none;
+	background-color: transparent;
+	display: block;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+#input-user:focus{
+	outline: none;
+}
+.reference-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+.toggle-hamburger-preference{
+	width: 40px;
+	height: 40px;
+}
+.submit-btn{
+	width: 80px;
+	height: 35px;
+	border: none;
+	font-size: 0.8rem;
+	background-color: #eaeaea;
+	color: #888;
+}
+.blog-card-recent{
+	background-color: #d1d1d1;
+	transition: all 0.1s linear;
+}
+.blog-card-recent:hover{
+	box-shadow: none;
+	transform: translate(8px, 4px);
+}
+.button-join{
+	color: var(--white);
+	width: 150px;
+	height: 45px;
+	font-size: 0.9rem;
+	background-color: rgba(98, 98, 98, 0.1);
+	transition: filter 0.1s linear;
+}
+.button-join:hover{
+	filter: brightness(0.6);
+}
+.list-links *{
+	font-weight: lighter;
+	color: rgb(150, 249, 150);
+	font-size: 0.9rem;
+}
+.list-links li{
+	width: max-content;
+	transition: transform 0.2s linear;
+}
+.list-links li:hover{
+	transform: translateX(7px);
+}
+.block h5{
+	color: var(--white);
+}
