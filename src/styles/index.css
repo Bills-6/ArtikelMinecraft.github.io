@@ -112,7 +112,7 @@
 	color: var(--white);
 	width: 150px;
 	height: 45px;
-	font-size: 0.9rem;
+	font-size: 0.5rem !important;
 	background-color: rgba(98, 98, 98, 0.1);
 	transition: filter 0.1s linear;
 }
