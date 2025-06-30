@@ -1,4 +1,7 @@
 @import url(/src/util/util.css);
+*{
+	transition: all 0.2s linear;
+}
 .hamburger{
 	top: 32px;
 	right: 32px;
@@ -139,6 +142,9 @@
 .dark-mode#root main,
 .dark-mode#root aside{
 	background-color: #2a2a2a !important;
+}
+.dark-mode#root{
+	background-color: #1a1e27;
 }
 .dark-mode#root {
 	color: #fff !important;
